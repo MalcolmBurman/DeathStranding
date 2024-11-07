@@ -1,7 +1,7 @@
 import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js'; 
 import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://unpkg.com/three@0.126.1/examples/jsm/loaders/GLTFLoader.js';
-import { PointerLockControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/PointerLockControls.js';
+
 //init
 const w = window.innerWidth;
 const h = window.innerHeight;
@@ -28,14 +28,6 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.1;
 */
 //controls.enabled = false; 
-
-
-const controls = new PointerLockControls(camera, renderer.domElement);
-
-document.getElementById("nothingButton").addEventListener('click', () => {
-    controls.lock(); // Click to activate the controls
-});
-
 
 
 const moveSpeed = 0.1;
@@ -328,13 +320,7 @@ function animate(){
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
 
-    if (move.forward) controls.moveForward(moveSpeed);
-    if (move.backward) controls.moveForward(-moveSpeed);
-    if (move.left) controls.moveRight(-moveSpeed);
-    if (move.right) controls.moveRight(moveSpeed);
-    if (move.up) camera.position.y += moveSpeed;       
-    if (move.down) camera.position.y -= moveSpeed;     
-    
+
     if(l){
         if(cami != 0){
             neonText.classList.remove('fade-in');  
