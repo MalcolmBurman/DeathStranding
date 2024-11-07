@@ -30,30 +30,6 @@ controls.dampingFactor = 0.1;
 //controls.enabled = false; 
 
 
-const moveSpeed = 0.1;
-const move = { forward: 0, backward: 0, left: 0, right: 0, up: 0, down: 0 };
-document.addEventListener('keydown', (e) => {
-    switch (e.code) {
-        case 'KeyW': move.forward = 1; break;
-        case 'KeyS': move.backward = 1; break;
-        case 'KeyA': move.left = 1; break;
-        case 'KeyD': move.right = 1; break;
-        case 'Space': move.up = 1; break;
-        case 'ShiftLeft': move.down = 1; break;
-    }
-});
-
-document.addEventListener('keyup', (e) => {
-    switch (e.code) {
-        case 'KeyW': move.forward = 0; break;
-        case 'KeyS': move.backward = 0; break;
-        case 'KeyA': move.left = 0; break;
-        case 'KeyD': move.right = 0; break;
-        case 'Space': move.up = 0; break;
-        case 'ShiftLeft': move.down = 0; break;
-    }
-});
-
 //objects
 const neonText = document.getElementById('title');
 const loadingScreen = document.getElementById('loadingScreen');
@@ -62,20 +38,6 @@ const infoBox = document.getElementById('infobox');
 const gui = document.getElementById('gui');
 const musicButton = document.getElementById('musicButton');
 
-const backgroundMusic = document.getElementById('backgroundMusic');
-
-backgroundMusic.volume = 0.5; 
-//backgroundMusic.play();
-
-musicButton.addEventListener('click', () => {
-    if (backgroundMusic.paused) {
-        backgroundMusic.play(); 
-        musicButton.classList.remove('mute'); 
-    } else {
-        backgroundMusic.pause(); 
-        musicButton.classList.add('mute'); 
-    }
-});
 
 let mountain; 
 gloader.load('../DeathStranding/objekt/mountain/scene.gltf', function (e) {
