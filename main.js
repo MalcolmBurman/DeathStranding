@@ -86,7 +86,7 @@ musicButton.addEventListener('click', () => {
 });
 
 let mountain; 
-gloader.load('../objekt/mountain/scene.gltf', function (e) {
+gloader.load('../DeathStranding/objekt/mountain/scene.gltf', function (e) {
     mountain = e.scene;
 
     mountain.traverse((node) => {
@@ -114,7 +114,7 @@ gloader.load('../objekt/mountain/scene.gltf', function (e) {
 let DSbox;
 let DSbox2;
 let DSbox3;
-gloader.load('../objekt/DSbox/scene.gltf', function (e){
+gloader.load('../DeathStranding/objekt/DSbox/scene.gltf', function (e){
     DSbox = e.scene;
     DSbox.position.set(-42.07233273805982, -3.9, 22.59873784177457);
     DSbox.scale.set(0.01, 0.01, 0.01);
@@ -135,7 +135,7 @@ gloader.load('../objekt/DSbox/scene.gltf', function (e){
 });
 
 let BTlion;
-gloader.load('../objekt/BTlion/BTlion.gltf', function (e) {
+gloader.load('../DeathStranding/objekt/BTlion/BTlion.gltf', function (e) {
     BTlion = e.scene;
     BTlion.traverse((node) => {
         if (node.isMesh) {
@@ -158,7 +158,7 @@ gloader.load('../objekt/BTlion/BTlion.gltf', function (e) {
 });
 
 let chiralCrystal
-gloader.load('../objekt/chiralCrystal/result.gltf', function (e) {
+gloader.load('../DeathStranding/objekt/chiralCrystal/result.gltf', function (e) {
     chiralCrystal = e.scene;
     chiralCrystal.traverse((node) => {
         if (node.isMesh) {
