@@ -1,0 +1,128 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.2.cf7d3637)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_volume",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1302222,
+            "type": "VEC3",
+            "max": [
+                2.20910906791687,
+                2.7980096340179445,
+                3.4074337482452394
+            ],
+            "min": [
+                -2.2620718479156496,
+                -7.653928279876709,
+                -3.06303071975708
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1302222,
+            "type": "VEC3",
+            "max": [
+                0.9999977946281433,
+                0.9999972581863403,
+                0.9999990463256836
+            ],
+            "min": [
+                -0.9999983906745911,
+                -0.9999836683273315,
+                -0.9999943375587463
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1302222,
+            "type": "SCALAR",
+            "max": [
+                1302221
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 36462216,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 15626664,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 15626664,
+            "byteLength": 15626664,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 31253328,
+            "byteLength": 5208888,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 2,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "<STL_BINARY>",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "node",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}

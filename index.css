@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'BO_CD_Mono_Light';
+    src: url('DeathStrandingFonts/BO_CD_Mono_Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BO_CD_Mono_Medium';
+    src: url('DeathStrandingFonts/BO_CD_Mono_Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EX_Mils_Med';
+    src: url('DeathStrandingFonts/EX_Mils_Med.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EX_Mils_Med_Oblique';
+    src: url('DeathStrandingFonts/EX_Mils_Med_Oblique.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EX_PS_Medium_Neon';
+    src: url('DeathStrandingFonts/EX_PS_Medium_Neon.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { margin: 0; overflow: hidden;}
+
+.downleft{
+    position: absolute; 
+    opacity: 0;
+    user-select: none;
+    bottom: 15%;
+    left: 10%;
+}
+
+.downleft button{
+     /* Space for the icon */
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #eeeeee;
+    font-weight: bold;
+    border: none;
+    background-color: transparent; /* or any other color */
+    height: 52px;
+    width: 52px;
+}
+
+#prevPointButton {
+    background-image: url('/svgs/round-arrow-left-svgrepo-com.svg');
+}
+
+#nextPointButton {
+    background-image: url('/svgs/round-arrow-right-svgrepo-com.svg');
+    transform: translateX(100%);
+}
+
+#musicButton {
+    background-image: url('/svgs/music-note-svgrepo-com.svg');
+    transform: translateY(-120%) translateX(-110%);
+}
+
+#musicButton.mute {
+    background-image: url('/svgs/muted-svgrepo-com.svg');
+}
+
+#nothingButton{
+    background-image: url('/svgs/cross-svgrepo-com.svg');
+    transform: rotate(-90deg);
+    transform: translateY(120%) translateX(-215%);
+}
+
+#prevPointButton,
+#nextPointButton,
+#nothingButton,
+#musicButton{
+    background-size: 48px 48px;
+}
+
+#prevPointButton:hover,
+#nextPointButton:hover,
+#nothingButton:hover,
+#musicButton:hover{
+    background-size: 52px 52px;
+    animation: neonPulse 2s ease-in-out infinite;
+}
+
+#prevPointButton:active,
+#nextPointButton:active,
+#nothingButton:active,
+#musicButton:active{
+    background-size: 50px 50px;
+    animation: neonPulse 2s ease-in-out infinite;
+}
+
+
+.downright{
+    position: absolute; 
+    user-select: none;
+    bottom: 30%;
+    right: -500px;
+    text-shadow: #1C1C1C 0 0 1px;
+    color: #eeeeee;
+    width: 300px;       
+    height: 0px;     
+    background-color: #00b2ff;
+    box-shadow: 
+    100px 0 120px 50px rgba(0, 178, 255, 0.5),
+    150px 0 200px 80px rgba(0, 178, 255, 0.4),
+    250px 0 300px 90px rgba(0, 178, 255, 0.3),
+    350px 0 400px 90px rgba(0, 178, 255, 0.3),
+    -20px 0 500px 100px rgba(0, 178, 255, 0.3);
+}
+
+
+
+.innerinfobox{
+    position: absolute;
+    transform: translateY(-90%);
+    right: 0%;
+}
+h1{
+    font-size: 7vw;
+    font-weight: 1;
+   /*text-shadow: #1C1C1C 0 0 5px;*/
+    color: #1c1c1c; 
+    font-family: EX_PS_Medium_Neon; 
+    position: absolute; 
+    user-select: none;
+    top: 23%;
+    left: 27%;
+    z-index: 1;
+}
+
+h2{
+    font-size: 45px;
+    font-family: EX_PS_Medium_Neon; 
+    font-weight: 1;   
+}
+
+p{
+    font-size: 16px;
+    font-family: EX_Mils_Med; 
+}
+
+.startButton{
+    color: #eeeeee;
+    position: absolute;
+    top: 47%;
+    left: 47.5%;
+    font-family: EX_PS_Medium_Neon;
+    border: none; /* Remove the border */
+    background: none;
+    font-size: 3vh;
+    user-select: none;
+}
+.startButton:hover {
+   transform: scale(1.01);
+   animation: neonPulse 1s ease-in-out infinite;
+}
+
+.startButton:active {
+    transform: scale(0.95);
+    animation: neonPulse 1s ease-in-out infinite;
+ }
+ 
+
+
+.loading{
+    background-color: #eeeeee;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+    
+@keyframes neonPulse {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px #00B2FF,    
+            0 0 10px #00B2FF,    
+            0 0 20px #00B2FF,    
+            0 0 40px #00E0FF,    
+            0 0 80px #00E0FF;    
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #00B2FF,
+            0 0 20px #00B2FF,
+            0 0 40px #00B2FF,
+            0 0 60px #00E0FF,
+            0 0 120px #00E0FF;
+    }
+}
+
+@keyframes neonPulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px #00B2FF) 
+                drop-shadow(0 0 10px #00B2FF) 
+                drop-shadow(0 0 20px #00B2FF);
+    }
+    50% {
+        filter: drop-shadow(0 0 10px #00B2FF) 
+                drop-shadow(0 0 20px #00B2FF) 
+                drop-shadow(0 0 40px #00B2FF);
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully transparent */
+    }
+    100% {
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1; /* Start fully opaque */
+
+    }
+    100% {
+        opacity: 0; /* End fully transparent */
+        display: none;
+    }
+}
+
+@keyframes fadeOutColor {
+    0%{
+        color: #1C1C1C;
+    }
+    50%{
+        color: #bcced1;
+    }
+    100%{
+        color: #eeeeee;
+    }
+}
+
+@keyframes glideIn {
+    0% {
+        right: -500px; 
+        opacity: 0;  
+    }
+    100% {
+        right: 15%;   
+        opacity: 1;   
+    }
+}
+
+@keyframes glideOut {
+    0% {
+        right: 15%;    
+        opacity: 1;  
+    }
+    100% {  
+        right: -500px; 
+        opacity: 0;  
+    }
+}
+
+.fade-in {
+    animation: fadeIn 4s forwards; /* Use forwards to keep the final state */
+}
+
+.fade-out {
+    animation: fadeOut 2s forwards;
+}
+
+.fade-out-color{
+    animation: fadeOutColor 3s forwards;
+}
+
+.glide-in{
+    animation: glideIn 0.5s ease-out forwards; 
+}
+
+.glide-out{
+    animation: glideOut 0.5s ease-in forwards; 
+}
