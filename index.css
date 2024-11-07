@@ -56,25 +56,25 @@ body { margin: 0; overflow: hidden;}
 }
 
 #prevPointButton {
-    background-image: url('/svgs/round-arrow-left-svgrepo-com.svg');
+    background-image: url('/DeathStranding/svgs/round-arrow-left-svgrepo-com.svg');
 }
 
 #nextPointButton {
-    background-image: url('/svgs/round-arrow-right-svgrepo-com.svg');
+    background-image: url('/DeathStranding/svgs/round-arrow-right-svgrepo-com.svg');
     transform: translateX(100%);
 }
 
 #musicButton {
-    background-image: url('/svgs/music-note-svgrepo-com.svg');
+    background-image: url('/DeathStranding/svgs/music-note-svgrepo-com.svg');
     transform: translateY(-120%) translateX(-110%);
 }
 
 #musicButton.mute {
-    background-image: url('/svgs/muted-svgrepo-com.svg');
+    background-image: url('/DeathStranding/svgs/muted-svgrepo-com.svg');
 }
 
 #nothingButton{
-    background-image: url('/svgs/cross-svgrepo-com.svg');
+    background-image: url('/DeathStranding/svgs/cross-svgrepo-com.svg');
     transform: rotate(-90deg);
     transform: translateY(120%) translateX(-215%);
 }
